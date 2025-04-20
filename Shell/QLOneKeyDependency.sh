@@ -37,11 +37,11 @@ echo
 echo
 
 echo
-"当前node版本(如果没有node，请自行安装): "
+echo "当前node版本(如果没有node，请自行安装): "
 node -v
 
 echo
-"当前npm版本(如果没有npm，请自行安装): "
+echo "当前npm版本(如果没有npm，请自行安装): "
 npm -v
 
 npm config set registry https://registry.npmmirror.com
@@ -56,11 +56,11 @@ pnpm install -g js-base64 qrcode-terminal silly-datetime
 
 pip3 install requests
 
-cd /ql/data/scripts/ && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && npm i && npm i -S ts-node typescript @types/node date-fns axios png-js canvas --build-from-source
+cd /ql/data/scripts/ && apk update && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && npm i && npm i -S ts-node typescript @types/node date-fns axios png-js canvas --build-from-source
 cd /ql
-apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && cd scripts && npm install canvas --build-from-source
+apk update && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && cd scripts && npm install canvas --build-from-source
 cd /ql
-apk add python3 zlib-dev gcc jpeg-dev python3-dev musl-dev freetype-dev
+apk update && apk add python3 zlib-dev gcc jpeg-dev python3-dev musl-dev freetype-dev
 
 echo
 TIME g "依赖安装完毕...建议重启 Docker "
