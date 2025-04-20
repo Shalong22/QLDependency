@@ -37,11 +37,11 @@ echo
 echo
 
 echo
-echo "当前node版本(如果没有node，请自行安装): "
+echo -e "\n当前node版本(如果没有node，请自行安装): "
 node -v
 
 echo
-echo "当前npm版本(如果没有npm，请自行安装): "
+echo -e "\n当前npm版本(如果没有npm，请自行安装): "
 npm -v
 
 npm config set registry https://registry.npmmirror.com
